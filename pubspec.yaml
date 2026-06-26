@@ -1,0 +1,120 @@
+name: proyecto
+description: "SeñaLink AI - App de accesibilidad para personas con discapacidad auditiva."
+publish_to: 'none'
+version: 1.2.0+6
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Firebase & Backend
+  firebase_core: ^3.11.0
+  firebase_auth: ^5.5.0
+  cloud_firestore: ^5.6.3
+  firebase_storage: ^12.4.10
+  firebase_messaging: ^15.2.10
+  
+  # State Management & Fonts
+  provider: ^6.1.2
+  google_fonts: ^6.2.1
+  
+  # UI, Animations & Effects
+  lottie: ^3.1.2
+  shimmer: ^3.0.0
+  curved_navigation_bar: ^1.0.6
+  flutter_animate: ^4.5.2
+  animations: ^2.0.11
+  smooth_page_indicator: ^1.1.0
+  flutter_svg: ^2.0.17
+  qr_flutter: ^4.1.0
+  
+  # Local Storage
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  path_provider: ^2.1.1
+  
+  # Hardware & Multimedia
+  camera: ^0.11.1
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.2
+  geolocator: ^13.0.2
+  vibration: ^2.0.1
+  url_launcher: ^6.3.1
+  mobile_scanner: ^6.0.4
+  image_picker: ^1.0.7
+  image_cropper: ^8.0.2 
+  share_plus: ^10.1.3
+  torch_light: ^1.1.0
+  noise_meter: ^5.0.0
+  flutter_local_notifications: ^18.0.1
+  shake: ^2.2.0
+  permission_handler: ^11.3.1
+
+  # Video Calls
+  agora_rtc_engine: ^6.6.3
+
+
+  # AI & Machine Learning - Versiones sincronizadas
+  google_mlkit_pose_detection: ^0.12.0
+  google_mlkit_face_mesh_detection: ^0.2.0
+  google_mlkit_commons: ^0.7.0
+  google_mlkit_text_recognition: ^0.13.0
+  tflite_flutter: ^0.11.0
+  shared_preferences: ^2.5.5
+  agora_token_generator: ^1.0.0
+
+# ESTE BLOQUE ARREGLA EL ERROR DE SENSORES Y GRADLE
+dependency_overrides:
+  sensors_plus: ^6.1.1
+  ffi: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/img_logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#2563EB"
+  adaptive_icon_foreground: "assets/images/img_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/ 
+    - assets/datasets/
+    - assets/lottie/
+    - assets/models/
+    
+    # --- PICTOGRAMAS (DIBUJOS DE AYUDA) ---
+    - assets/pictograms/acciones/
+    - assets/pictograms/emociones/
+    - assets/pictograms/emergencia/
+    - assets/pictograms/lugares/
+    - assets/pictograms/necesidades/
+    - assets/pictograms/personas/
+
+    # --- STICKERS (EMOJIS GRANDES PARA EL CHAT) ---
+    - assets/stickers/
+
+    # --- SEÑAS REALES (DICCIONARIO VISUAL DE INTEGRANTES) ---
+    - assets/senas/santiago/
+    - assets/senas/mari/
+    - assets/senas/andre/
+    - assets/senas/carlos/
+    - assets/senas/andryck/
+    - assets/senas/cinthia/
+    - assets/senas/anahy/
+    - assets/senas/juan/

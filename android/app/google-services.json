@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "711910750511",
+    "project_id": "senalink-ai",
+    "storage_bucket": "senalink-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711910750511:android:9c12555cee517e0a2449da",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY__HWl3iDcfZSTASz6jlN3JZrKB0ItHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711910750511:android:b3a766e34912db452449da",
+        "android_client_info": {
+          "package_name": "com.senalink.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY__HWl3iDcfZSTASz6jlN3JZrKB0ItHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
